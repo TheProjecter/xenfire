@@ -1,0 +1,94 @@
+
+#info_page_block {
+	position: fixed;
+	overflow: auto;
+	padding: 0px 30px 10px 10px;
+	top: 19px;
+	left: 0px;
+	right: 0px;
+	bottom: 19px;
+	width: auto;
+	height: auto;
+}
+
+#info_text_block {
+	font-size: 1.05em;
+	line-height: 1.2em;
+	margin: 0 0 0 270px;
+	padding: 20px 0 0 0;
+}
+
+#info_text_block p {
+	text-align: justify;
+}
+
+#info_text_block ul li a {
+    text-decoration: underline;
+    color: black;
+}
+	
+#screen_shot_block {
+	float: left;
+	padding: 10px 0 0 20px;
+}
+
+
+#screen_shot_block img.shot {
+	width: 200px;
+	height: 150px;
+	background-image: url(../img/shadow200.png);
+	padding: 5px 15px 15px 5px;
+}
+
+#screen_shot_block img.logo {
+	margin-left: -20px;
+}
+
+p.enlarge_text {
+  color:#708090;
+  font-style: italic;
+}
+
+p.notice {
+	border: 2px DimGray solid;
+	-moz-border-radius:8px; 
+	background: LightGoldenRodYellow;
+	margin: 20px;
+	padding: 20px;
+}
+
+p.notice img {
+	float: left;
+	margin-top: -15px;
+	margin-right: 15px;
+}
+
+a.weblink { position:relative; }
+a.weblink span { display: none; }
+
+/*the span will display just on :hover state*/
+a.weblink:hover span { 
+    display:block;
+    position:absolute;
+	-moz-opacity: 0.70;
+    top: 35px; 
+	left: 45px; 
+}
+
+a.zoom { position:relative; }
+a.zoom span { display: none; }
+
+/*the span will display just on :hover state*/
+a.zoom:hover span { 
+    display:block;
+    position:absolute;
+	-moz-opacity: 0.9;
+    top: -25px; 
+	left: 175px; 
+}
+
+/*
+#info_page_block { border: 1px blue solid; } 
+#info_text_block { border: 1px blue solid; } 
+#screen_shot_block { border: 1px green solid; } 
+*/

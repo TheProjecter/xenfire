@@ -1,0 +1,23 @@
+Origin: Ubuntu
+Label: Ubuntu
+Suite: dapper
+Version: 6.06
+Codename: dapper
+Date: Wed, 31 May 2006 18:59:06 UTC
+Architectures: i386
+Components: main restricted
+Description: Ubuntu Dapper 6.06
+MD5Sum:
+ 5dd4df6cccf75b1e1df442d2c70fa4b5       94 main/binary-i386/Release
+ a3098eef9aec074b78268c411a321369    28488 main/binary-i386/Packages
+ e0319e3f17885bdde79079e6b22fa5f2     8062 main/binary-i386/Packages.gz
+ 45d36759cbb14292b44498dac9262247      100 restricted/binary-i386/Release
+ 609969c561e265d61f37a0a43c407267     2019 restricted/binary-i386/Packages
+ 8261b5e67219174e8f6b8f801f8567a9      860 restricted/binary-i386/Packages.gz
+SHA1:
+ 3cd6041a1cf9bc4b88cd18e601ee0da6c9b7de62       94 main/binary-i386/Release
+ a0275ea396aa991f88709713ff2f49d521ebaada    28488 main/binary-i386/Packages
+ 52eb0a133a8c186806f1b7a1cea05945d6cfe85a     8062 main/binary-i386/Packages.gz
+ 4c1a79546b42c20b62534c950ac9c8aa05fc0583      100 restricted/binary-i386/Release
+ eadf415644421e05b50b27541f342d5835fc5132     2019 restricted/binary-i386/Packages
+ aabab7770be890f7589e1f0bd636d4f38f429eb5      860 restricted/binary-i386/Packages.gz

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>  
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#">
+
+   <RDF:Description about="urn:mimetypes"> 
+      <NC:MIME-types> 
+         <RDF:Seq about="urn:mimetypes:root"> 
+            <RDF:li resource="urn:mimetype:application/launcher"/> 
+         </RDF:Seq> 
+      </NC:MIME-types> 
+   </RDF:Description> 
+  
+   <RDF:Description about="urn:mimetype:externalApplication:application/launcher" 
+         NC:prettyName="Launcher" 
+         NC:path="Launch.exe" /> 
+
+   <RDF:Description about="urn:mimetype:handler:application/launcher" 
+         NC:alwaysAsk="false" 
+         NC:saveToDisk="false"> 
+      <NC:externalApplication resource="urn:mimetype:externalApplication:application/launcher"/> 
+   </RDF:Description> 
+
+   <RDF:Description about="urn:mimetype:application/launcher" 
+         NC:value="application/launcher" 
+         NC:editable="true" 
+         NC:fileExtensions="lch" 
+         NC:description=""> 
+      <NC:handlerProp resource="urn:mimetype:handler:application/launcher"/> 
+   </RDF:Description> 
+
+   <RDF:Description about="urn:mimetypes"> 
+      <NC:MIME-types> 
+         <RDF:Seq about="urn:mimetypes:root"> 
+            <RDF:li resource="urn:mimetype:application/cdvideo"/> 
+         </RDF:Seq> 
+      </NC:MIME-types> 
+   </RDF:Description> 
+   
+   <RDF:Description about="urn:mimetype:externalApplication:application/cdvideo" 
+         NC:prettyName="VLC" 
+         NC:path="vlc.exe" /> 
+
+   <RDF:Description about="urn:mimetype:handler:application/cdvideo" 
+         NC:alwaysAsk="false" 
+         NC:saveToDisk="false"> 
+      <NC:externalApplication resource="urn:mimetype:externalApplication:application/cdvideo"/> 
+   </RDF:Description> 
+
+   <RDF:Description about="urn:mimetype:application/cdvideo" 
+         NC:value="application/cdvideo" 
+         NC:editable="true" 
+         NC:fileExtensions="avi" 
+         NC:description=""> 
+      <NC:handlerProp resource="urn:mimetype:handler:application/cdvideo"/> 
+   </RDF:Description> 
+
+</RDF:RDF>
+
