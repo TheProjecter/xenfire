@@ -1,0 +1,742 @@
+Package: binutils
+Priority: optional
+Section: devel
+Installed-Size: 6848
+Maintainer: James Troup <james@nocrew.org>
+Architecture: i386
+Version: 2.16.1cvs20060117-1ubuntu2.1
+Provides: elf-binutils
+Depends: libc6 (>= 2.3.4-1)
+Suggests: binutils-doc (= 2.16.1cvs20060117-1ubuntu2.1)
+Conflicts: gas, elf-binutils, modutils (<< 2.4.19-1)
+Filename: pool/main/b/binutils/binutils_2.16.1cvs20060117-1ubuntu2.1_i386.deb
+Size: 1406670
+MD5sum: 4499747cec6bb1463f7b85144d59f466
+Description: The GNU assembler, linker and binary utilities
+ The programs in this package are used to assemble, link and manipulate
+ binary and object files.  They may be used in conjunction with a compiler
+ and various libraries to build programs.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: bpalogin
+Priority: extra
+Section: net
+Installed-Size: 128
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: i386
+Version: 2.0.2-6ubuntu1
+Depends: libc6 (>= 2.3.4-1), lsb-base (>= 1.3-9ubuntu3)
+Recommends: dhcp-client
+Filename: pool/main/b/bpalogin/bpalogin_2.0.2-6ubuntu1_i386.deb
+Size: 20534
+MD5sum: f1d288db8b9f62b11e182cef430c6288
+Description: login client for the Telstra Bigpond Cable Network (Australia)
+ bpalogin is an open source login client for the Telstra Bigpond Cable
+ Network in Australia. It is neither written nor supported by Telstra or
+ Bigpond. It is both simple to use and stable. Unlike the standard client it
+ does not crash, reconnects when there is a network problem, is available for
+ most operating systems, can run as a service on WinNT/2k and comes with source
+ .
+ Homepage: http://bpalogin.sourceforge.net/
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: build-essential
+Priority: optional
+Section: devel
+Installed-Size: 48
+Maintainer: Scott James Remnant <scott@netsplit.com>
+Architecture: i386
+Version: 11.1
+Depends: libc6-dev | libc-dev, gcc (>= 4:4.0), g++ (>= 4:4.0), make, dpkg-dev (>= 1.13.5)
+Filename: pool/main/b/build-essential/build-essential_11.1_i386.deb
+Size: 6826
+MD5sum: a08a59d3a8ed6c952300762bcb23ebb5
+Description: informational list of build-essential packages
+ If you do not plan to build Debian packages, you don't need this
+ package.  Moreover this package is not required for building Debian
+ packages.
+ .
+ This package contains an informational list of packages which are
+ considered essential for building Debian packages.  This package also
+ depends on the packages on that list, to make it easy to have the
+ build-essential packages installed.
+ .
+ If you have this package installed, you only need to install whatever
+ a package specifies as its build-time dependencies to build the
+ package.  Conversely, if you are determining what your package needs
+ to build-depend on, you can always leave out the packages this
+ package depends on.
+ .
+ This package is NOT the definition of what packages are
+ build-essential; the real definition is in the Debian Policy Manual.
+ This package contains merely an informational list, which is all
+ most people need.   However, if this package and the manual disagree,
+ the manual is correct.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: dpkg-dev
+Priority: optional
+Section: utils
+Installed-Size: 528
+Maintainer: Scott James Remnant <scott@netsplit.com>
+Architecture: all
+Source: dpkg
+Version: 1.13.11ubuntu6
+Replaces: dpkgname, dpkg (<< 1.4.1.8), dpkg-doc-ja
+Depends: dpkg (>= 1.13.1), perl5, perl-modules, cpio (>= 2.4.2-2), patch (>= 2.2-1), make, binutils
+Recommends: gcc | c-compiler, bzip2
+Suggests: gnupg, debian-keyring
+Conflicts: dpkgname
+Filename: pool/main/d/dpkg/dpkg-dev_1.13.11ubuntu6_all.deb
+Size: 163130
+MD5sum: 849d2ca5696d0f6eab86579f3bd1c8a6
+Description: package building tools for Debian
+ This package contains the tools (including dpkg-source) required to
+ unpack, build and upload Debian source packages.
+ .
+ Most Debian source packages will require additional tools to build -
+ for example, most packages need the `make' and the C compiler `gcc'.
+Origin: Ubuntu
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+
+Package: eagle-usb-data
+Priority: optional
+Section: net
+Installed-Size: 1044
+Maintainer: Cyril Martin <mcoolive@free.fr>
+Architecture: all
+Source: eagle-usb
+Version: 2.1.1-2
+Replaces: eagle-adsl-data
+Recommends: eagle-usb-modules
+Conflicts: eagle-adsl-data, eagle-usb-utils (<< 1.9.6)
+Filename: pool/main/e/eagle-usb/eagle-usb-data_2.1.1-2_all.deb
+Size: 421094
+MD5sum: 5ac1b117264e2d2115dcf4a1f3a99cbf
+Description: Data for Eagle USB ADSL modems
+ This package provides the DSP code needed to use the USB ADSL modems
+ featuring the Eagle chipset.  This includes the Sagem F@st 800 modem.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: eagle-usb-utils
+Priority: optional
+Section: net
+Installed-Size: 480
+Maintainer: Cyril Martin <mcoolive@free.fr>
+Architecture: i386
+Source: eagle-usb
+Version: 2.1.1-2
+Replaces: eagle-adsl-tools
+Depends: net-tools, eagle-usb-data (>= 1.9.6), module-init-tools | modutils, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.3.4-1)
+Recommends: pppoe | libatm1 | dhcp3-client, hotplug (>= 0.0.20020826-1), ifupdown
+Suggests: eagle-usb-modules
+Conflicts: eagle-adsl-tools
+Filename: pool/main/e/eagle-usb/eagle-usb-utils_2.1.1-2_i386.deb
+Size: 87180
+MD5sum: 05a7c8d250f3920d54f52df8577542c4
+Description: Userspace tools for Eagle USB ADSL modems
+ This package provides the userspace tools needed to use the USB ADSL
+ modems featuring the Eagle chipset.  This includes the Sagem F@st 800
+ modem.
+ .
+ You'll need a kernel module to be able to use these tools.  Such a
+ kernel module can be semi-automatically compiled and installed if you
+ install the eagle-usb-modules-source package and follow the
+ instructions in /usr/share/doc/eagle-usb-utils/README.Debian.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: fakeroot
+Priority: optional
+Section: utils
+Installed-Size: 376
+Maintainer: Clint Adams <schizo@debian.org>
+Architecture: i386
+Version: 1.5.6ubuntu2
+Depends: libc6 (>= 2.3.4-1)
+Filename: pool/main/f/fakeroot/fakeroot_1.5.6ubuntu2_i386.deb
+Size: 93794
+MD5sum: 21edfd3c8939d2f13b6146aff1a1ec53
+Description: Gives a fake root environment
+ This package is intended to enable something like:
+   dpkg-buildpackage -rfakeroot
+ i.e. to remove the need to become root for a package build.
+ This is done by setting LD_PRELOAD to libfakeroot.so,
+ which provides wrappers around getuid, chown, chmod, mknod,
+ stat, and so on, thereby creating a fake root environment.
+ .
+ fakeroot requires SYSV IPC or TCP to operate.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: cpp-4.0
+Priority: optional
+Section: interpreters
+Installed-Size: 4532
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Source: gcc-4.0
+Version: 4.0.3-1ubuntu5
+Replaces: cpp-3.5
+Depends: gcc-4.0-base (= 4.0.3-1ubuntu5), libc6 (>= 2.3.4-1)
+Suggests: gcc-4.0-locales (>= 4.0.3-1)
+Filename: pool/main/g/gcc-4.0/cpp-4.0_4.0.3-1ubuntu5_i386.deb
+Size: 1986820
+MD5sum: dadba9c2a61126808fce35b16adf7b0f
+Description: The GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: g++-4.0
+Priority: optional
+Section: devel
+Installed-Size: 5036
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Source: gcc-4.0
+Version: 4.0.3-1ubuntu5
+Replaces: gcc (<= 2.7.2.3-3), g++-3.5
+Provides: c++-compiler, c++abi2-dev
+Depends: gcc-4.0-base (= 4.0.3-1ubuntu5), gcc-4.0 (= 4.0.3-1ubuntu5), libstdc++6-4.0-dev (= 4.0.3-1ubuntu5), libc6 (>= 2.3.4-1)
+Suggests: gcc-4.0-doc (>= 4.0.3-1), lib64stdc++6
+Conflicts: g++-3.5
+Filename: pool/main/g/gcc-4.0/g++-4.0_4.0.3-1ubuntu5_i386.deb
+Size: 2271092
+MD5sum: af1eee74c842df453d3daada62f4d48e
+Description: The GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: gcc-4.0
+Priority: optional
+Section: devel
+Installed-Size: 1276
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Version: 4.0.3-1ubuntu5
+Replaces: gcc-3.5
+Provides: c-compiler
+Depends: gcc-4.0-base (= 4.0.3-1ubuntu5), cpp-4.0 (= 4.0.3-1ubuntu5), binutils (>= 2.16.1cvs20051214), libgcc1 (>= 1:4.0.3-1ubuntu5), libc6 (>= 2.3.4-1)
+Recommends: libc6-dev (>= 2.3.5-1ubuntu5), libmudflap0-dev (>= 4.0.3-1ubuntu5)
+Suggests: gcc-4.0-doc (>= 4.0.3-1), gcc-4.0-locales (>= 4.0.3-1), libc6-dev-amd64, lib64gcc1 (>= 1:4.0.3-1ubuntu5)
+Conflicts: gcc-3.2 (<= 1:3.2.3-0pre8), gcc-3.5, amd64-libs-dev (<= 1.1ubuntu1)
+Filename: pool/main/g/gcc-4.0/gcc-4.0_4.0.3-1ubuntu5_i386.deb
+Size: 512640
+MD5sum: ffd5a01012a81269443ca057a96ee4ba
+Description: The GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: libstdc++6-4.0-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 8812
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Source: gcc-4.0
+Version: 4.0.3-1ubuntu5
+Replaces: libstdc++6-0-dev
+Provides: libstdc++-dev
+Depends: gcc-4.0-base (= 4.0.3-1ubuntu5), g++-4.0 (= 4.0.3-1ubuntu5), libstdc++6 (>= 4.0.3-1ubuntu5), libc6-dev (>= 2.3.5-1ubuntu5)
+Suggests: libstdc++6-4.0-doc, stl-manual
+Conflicts: libg++27-dev, libg++272-dev (<< 2.7.2.8-1), libstdc++2.8-dev, libg++2.8-dev, libstdc++2.9-dev, libstdc++2.9-glibc2.1-dev, libstdc++2.10-dev (<< 1:2.95.3-2), libstdc++3.0-dev, libstdc++6-0-dev
+Filename: pool/main/g/gcc-4.0/libstdc++6-4.0-dev_4.0.3-1ubuntu5_i386.deb
+Size: 1470508
+MD5sum: 6f49dc0b5e5a066996c18afbdf316efd
+Description: The GNU Standard C++ Library v3 (development files)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: cpp
+Priority: optional
+Section: interpreters
+Installed-Size: 96
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Source: gcc-defaults (1.32)
+Version: 4:4.0.3-1
+Depends: cpp-4.0 (>= 4.0.3)
+Suggests: cpp-doc
+Conflicts: cpp-doc (<< 1:2.95.3)
+Filename: pool/main/g/gcc-defaults/cpp_4.0.3-1_i386.deb
+Size: 30970
+MD5sum: 750279e9a9c5213dcbf8de7ff325768f
+Description: The GNU C preprocessor (cpp)
+ The GNU C preprocessor is a macro processor that is used automatically
+ by the GNU C compiler to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+ .
+ This is a dependency package providing the default GNU C preprocessor.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: g++
+Priority: optional
+Section: devel
+Installed-Size: 40
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Source: gcc-defaults (1.32)
+Version: 4:4.0.3-1
+Provides: c++-compiler
+Depends: cpp (>= 4:4.0.3-1), gcc (>= 4:4.0.3-1), g++-4.0 (>= 4.0.3), gcc-4.0 (>= 4.0.3)
+Filename: pool/main/g/gcc-defaults/g++_4.0.3-1_i386.deb
+Size: 1386
+MD5sum: aff505809394fa97ca118fbe2121020d
+Description: The GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This is a dependency package providing the default GNU C++ compiler.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: gcc
+Priority: optional
+Section: devel
+Installed-Size: 64
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Source: gcc-defaults (1.32)
+Version: 4:4.0.3-1
+Provides: c-compiler
+Depends: cpp (>= 4:4.0.3-1), gcc-4.0 (>= 4.0.3)
+Recommends: libc6-dev | libc-dev
+Suggests: make, manpages-dev, autoconf, automake1.9, libtool, flex, bison, gdb, gcc-doc
+Conflicts: gcc-doc (<< 1:2.95.3)
+Filename: pool/main/g/gcc-defaults/gcc_4.0.3-1_i386.deb
+Size: 5048
+MD5sum: dfc1bcea4b13e5d28668f70bc0a1cb67
+Description: The GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ This is a dependency package providing the default GNU C compiler.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: libc6-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 10948
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: i386
+Source: glibc
+Version: 2.3.6-0ubuntu20
+Replaces: man-db (<= 2.3.10-41), gettext (<= 0.10.26-1), ppp (<= 2.2.0f-24), libgdbmg1-dev (<= 1.7.3-24), ldso (<= 1.9.11-9), netkit-rpc, netbase (<< 4.0), kerberos4kth-dev (<< 1.2.2-10), libc6-prof (<< 2.3.5-2)
+Provides: libc-dev
+Depends: libc6 (= 2.3.6-0ubuntu20), linux-kernel-headers (>= 2.6.11.2-0)
+Recommends: gcc | c-compiler
+Suggests: glibc-doc, manpages-dev
+Conflicts: libstdc++2.10-dev (<< 1:2.95.2-15), gcc-2.95 (<< 1:2.95.3-9), libpthread0-dev, libdl1-dev, libdb1-dev, libgdbm1-dev, libc6-dev (<< 2.0.110-1), locales (<< 2.1.3-5), libstdc++2.9-dev, netkit-rpc, libc-dev
+Filename: pool/main/g/glibc/libc6-dev_2.3.6-0ubuntu20_i386.deb
+Size: 2821696
+MD5sum: 8a9f57ed51a49e8e7ea1619e9bf3f440
+Description: GNU C Library: Development Libraries and Header Files
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: capiutils
+Priority: extra
+Section: net
+Installed-Size: 264
+Maintainer: Paul Slootman <paul@debian.org>
+Architecture: i386
+Source: isdnutils
+Version: 1:3.8.2005-12-06-2ubuntu4
+Replaces: isdnactivecards (<< 1:3.6.2004-12-19-1)
+Depends: libcapi20-3 (= 1:3.8.2005-12-06-2ubuntu4), libc6 (>= 2.3.4-1), libcapi20-3, lsb-base (>= 1.3-9ubuntu3)
+Filename: pool/main/i/isdnutils/capiutils_3.8.2005-12-06-2ubuntu4_i386.deb
+Size: 75278
+MD5sum: 6e02edd9ff18f573a3c7d542ddf1556c
+Description: Utilities for CAPI-capable ISDN cards
+ Some ISDN cards (notably the AVM active cards, and the AVM passive cards
+ when using the proprietary drivers) are accessed via the CAPI interface.
+ The package contains utilities to initialize and get information about
+ these cards.
+ .
+ See /usr/share/doc/capiutils/* for some (rudimentary) info.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: ipppd
+Priority: extra
+Section: net
+Installed-Size: 404
+Maintainer: Paul Slootman <paul@debian.org>
+Architecture: i386
+Source: isdnutils
+Version: 1:3.8.2005-12-06-2ubuntu4
+Replaces: isdnutils (<< 1:3.1pre1b-0)
+Depends: isdnutils-base (= 1:3.8.2005-12-06-2ubuntu4), debconf (>= 1.2.9) | debconf-2.0, ppp, libc6 (>= 2.3.4-1), libpcap0.8 (>= 0.9.3-1), libssl0.9.8 (>= 0.9.8a-1)
+Suggests: pdnsd
+Filename: pool/main/i/isdnutils/ipppd_3.8.2005-12-06-2ubuntu4_i386.deb
+Size: 153702
+MD5sum: fd168242e971e331bb136565c253d235
+Description: PPP daemon for syncPPP over ISDN
+ If you want to connect to the internet over ISDN with an internal ISDN card,
+ you will need this.
+ .
+ Also needed for allowing dialins from Windows PCs over ISDN.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: isdnutils-base
+Priority: optional
+Section: utils
+Installed-Size: 488
+Maintainer: Paul Slootman <paul@debian.org>
+Architecture: i386
+Source: isdnutils
+Version: 1:3.8.2005-12-06-2ubuntu4
+Replaces: isdnutils (<< 1:3.1pre1b-23)
+Depends: debconf (>= 1.2.9) | debconf-2.0, makedev (>= 2.3.1-77), libc6 (>= 2.3.4-1), libncurses5 (>= 5.4-5), lsb-base (>= 1.3-9ubuntu3)
+Suggests: ipppd, isdnlog, isdnutils-doc, isdnutils-xtools, isdnvboxserver, isdnvboxclient
+Filename: pool/main/i/isdnutils/isdnutils-base_3.8.2005-12-06-2ubuntu4_i386.deb
+Size: 149216
+MD5sum: c44a28783d0b0c87358ac3a58bc43719
+Description: ISDN utilities, the basic (minimal) set
+ These utilities are the basic set of ISDN utilities that you need when you
+ have an ISDN card installed. For complete functionality comparable to the
+ old isdnutils package, you also need the following packages:
+ .
+  ipppd            for networking over ISDN with syncPPP
+  isdnlog          for logging ISDN calls (and much more)
+  isdnutils-xtools for X ISDN apps (currently only xisdnload and xmonisdn)
+  isdnutils-doc    for extensive documentation (basic docs are of course
+                   included with each package)
+  isdnvboxserver   ISDN answering machine, things needed on a server system
+  isdnvboxclient   ISDN answering machine, client side (vbox)
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: isdnutils-xtools
+Priority: extra
+Section: x11
+Installed-Size: 224
+Maintainer: Paul Slootman <paul@debian.org>
+Architecture: i386
+Source: isdnutils
+Version: 1:3.8.2005-12-06-2ubuntu4
+Replaces: isdnutils (<< 1:3.1pre1b-0)
+Depends: isdnutils-base (= 1:3.8.2005-12-06-2ubuntu4), libc6 (>= 2.3.4-1), libice6, libsm6, libx11-6, libxaw7, libxext6, libxmu6, libxpm4, libxt6
+Filename: pool/main/i/isdnutils/isdnutils-xtools_3.8.2005-12-06-2ubuntu4_i386.deb
+Size: 49166
+MD5sum: 42428de62d09cae8d76c1f261995e409
+Description: ISDN utilities that use X
+ These are the graphical utilities for ISDN, xmonisdn and xisdnload.
+ They provide, each in their own way, a visual indication of the status of
+ the ISDN lines, so that it is directly obvious when there is a connection,
+ for example.
+ .
+ This has been separated out of the main isdnutils package so that if you
+ don't run X but do need ISDN, you don't have to include the X libraries
+ unnecessarily.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: libcapi20-3
+Priority: extra
+Section: libs
+Installed-Size: 116
+Maintainer: Paul Slootman <paul@debian.org>
+Architecture: i386
+Source: isdnutils
+Version: 1:3.8.2005-12-06-2ubuntu4
+Replaces: isdnutils (<< 1:3.1pre1b-0), libcapi20, libcapi20-2
+Depends: libc6 (>= 2.3.4-1)
+Conflicts: libcapi20, libcapi20-2
+Filename: pool/main/i/isdnutils/libcapi20-3_3.8.2005-12-06-2ubuntu4_i386.deb
+Size: 38584
+MD5sum: 6f5e3d7b5f6fe04250c98edb2acc64fb
+Description: libraries for CAPI support
+ If you have an ISDN card with which CAPI works, you may be able to use
+ applications that use CAPI, e.g. a fax system. At this point, AVM cards can
+ work with CAPI, as well as some active cards. For the AVM passive cards you
+ need to visit the www.AVM.de website.
+ .
+ If you need this package, it will be installed automatically via dependencies,
+ no need to select it yourself.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: libcapi20-dev
+Priority: extra
+Section: libdevel
+Installed-Size: 152
+Maintainer: Paul Slootman <paul@debian.org>
+Architecture: i386
+Source: isdnutils
+Version: 1:3.8.2005-12-06-2ubuntu4
+Replaces: isdnutils (<< 1:3.1pre1b-0), libcapi20, libcapi20-2
+Depends: libcapi20-3 (= 1:3.8.2005-12-06-2ubuntu4)
+Conflicts: libcapi20, libcapi20-2
+Filename: pool/main/i/isdnutils/libcapi20-dev_3.8.2005-12-06-2ubuntu4_i386.deb
+Size: 27606
+MD5sum: 104bf0d589c9d89b130623e47a8af7a9
+Description: libraries for CAPI support
+ If you have an ISDN card with which CAPI works, you may be able to use
+ applications that use CAPI, e.g. a fax system. At this point, AVM cards can
+ work with CAPI, as well as some active cards. For the AVM passive cards you
+ need to visit the www.AVM.de website.
+ .
+ If you need this package, it will be installed automatically via dependencies,
+ no need to select it yourself.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: pppdcapiplugin
+Priority: extra
+Section: net
+Installed-Size: 376
+Maintainer: Paul Slootman <paul@debian.org>
+Architecture: i386
+Source: isdnutils
+Version: 1:3.8.2005-12-06-2ubuntu4
+Depends: ppp (>= 2.3.11), libcapi20-3 (= 1:3.8.2005-12-06-2ubuntu4), libc6 (>= 2.3.4-1)
+Filename: pool/main/i/isdnutils/pppdcapiplugin_3.8.2005-12-06-2ubuntu4_i386.deb
+Size: 102920
+MD5sum: cdd973748ea0b3a155b07fa2c0ce455e
+Description: plugin for pppd to communicate with CAPI-capable ISDN cards
+ Some ISDN cards (notably the AVM passive cards, when a module from the AVM
+ website is loaded) can be used by CAPI utilities.
+ This is a plugin for the regular PPP daemon to use CAPI on such cards.
+ .
+ See /usr/share/doc/pppdcapiplugin/* for some (rudimentary) info.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: libatm1
+Priority: important
+Section: libs
+Installed-Size: 128
+Maintainer: Peter De Schrijver (p2) <p2@mind.be>
+Architecture: i386
+Source: linux-atm
+Version: 2.4.1-17
+Depends: libc6 (>= 2.3.4-1)
+Conflicts: atm-tools (<< 2.4.1-6)
+Filename: pool/main/l/linux-atm/libatm1_2.4.1-17_i386.deb
+Size: 67932
+MD5sum: 245f16de0196793b159380d0f9182334
+Description: shared library for ATM (Asynchronous Transfer Mode)
+ Shared libraries needed by ATM (Asynchronous Transfer Mode) related programs
+ .
+ Homepage: http://linux-atm.sourceforge.net/
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+Task: ubuntu-minimal
+
+Package: linux-kernel-headers
+Priority: optional
+Section: devel
+Installed-Size: 6488
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: i386
+Version: 2.6.11.2-0ubuntu18
+Replaces: libc6-dev (<< 2.3.2.ds1-6), libc6.1-dev (<< 2.3.2.ds1-6), dvb-dev (<< 1.0.1-6)
+Conflicts: libc6-dev (<< 2.3.2.ds1-6), libc6.1-dev (<< 2.3.2.ds1-6), dvb-dev (<< 1.0.1-6), amd64-libs-dev (<= 1.1)
+Filename: pool/main/l/linux-kernel-headers/linux-kernel-headers_2.6.11.2-0ubuntu18_i386.deb
+Size: 1039142
+MD5sum: af9814c9f8d5e5aa538530a15ac11127
+Description: Linux Kernel Headers for development
+ This package provides headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-headers-386
+Priority: optional
+Section: devel
+Installed-Size: 52
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: i386
+Source: linux-meta
+Version: 2.6.15.24
+Depends: linux-headers-2.6.15-26-386
+Filename: pool/main/l/linux-meta/linux-headers-386_2.6.15.24_i386.deb
+Size: 23360
+MD5sum: 69393ab0cbca5db79039ed7ef8fb5808
+Description: Linux kernel headers on 386
+ This package will always depend on the latest kernel headers available
+ for 386.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: linux-headers-2.6.15-26-386
+Priority: optional
+Section: devel
+Installed-Size: 22988
+Maintainer: Ben Collins <ben.collins@ubuntu.com>
+Architecture: i386
+Source: linux-source-2.6.15
+Version: 2.6.15-26.46
+Provides: linux-headers, linux-headers-2.6
+Depends: coreutils | fileutils (>= 4.0), linux-headers-2.6.15-26, libc6 (>= 2.3.4-1)
+Filename: pool/main/l/linux-source-2.6.15/linux-headers-2.6.15-26-386_2.6.15-26.46_i386.deb
+Size: 856398
+MD5sum: 2962068982a4a35fc449914e453500d5
+Description: Linux kernel headers 2.6.15 on 386
+ This package provides kernel header files for version 2.6.15 on 386, for
+ sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-2.6.15-26/debian.README.gz for details.
+
+Package: linux-headers-2.6.15-26
+Priority: optional
+Section: devel
+Installed-Size: 54712
+Maintainer: Ben Collins <ben.collins@ubuntu.com>
+Architecture: i386
+Source: linux-source-2.6.15
+Version: 2.6.15-26.46
+Provides: linux-headers, linux-headers-2.6
+Depends: coreutils | fileutils (>= 4.0)
+Filename: pool/main/l/linux-source-2.6.15/linux-headers-2.6.15-26_2.6.15-26.46_i386.deb
+Size: 6902516
+MD5sum: 936d19f8917ae5e05224390595e1ca2e
+Description: Header files related to Linux kernel version 2.6.15
+ This package provides kernel header files for version 2.6.15, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-headers-2.6.15-26/debian.README.gz for details
+
+Package: linux-wlan-ng
+Priority: extra
+Section: admin
+Installed-Size: 596
+Maintainer: Victor Seva <linuxmaniac@torreviejawireless.org>
+Architecture: i386
+Version: 0.2.3-1ubuntu7
+Depends: libc6 (>= 2.3.4-1), wireless-tools, udev
+Recommends: linux-wlan-ng-doc
+Conflicts: linux-wlan-ng-modules, linux-wlan-ng-0.1.15-modules
+Filename: pool/main/l/linux-wlan-ng/linux-wlan-ng_0.2.3-1ubuntu7_i386.deb
+Size: 132248
+MD5sum: 38cec2067384ede773f1b2111aba182c
+Description: utilities for wireless prism2 cards
+ linux-wlan-ng is a set of drivers and utilities that is intended to
+ provide the full range of IEEE 802.11 MAC management capabilities for use
+ in user-mode utilities and scripts.  The package currently supports the
+ Intersil 802.11b Prism2, Prism2.5, and Prism3 reference designs for
+ PCMCIA, PCI, and USB. Additionally, the package includes support for the
+ PLX9052 based PCI to PCMCIA adapter with a few different PCMCIA cards.
+ .
+ The standard Ubuntu kernel already contains all necessary drivers. This
+ package ships utilities and integration scripts to make above cards work
+ seamlessly with the Ubuntu network infrastructure.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: make
+Priority: optional
+Section: devel
+Installed-Size: 1312
+Maintainer: Manoj Srivastava <srivasta@debian.org>
+Architecture: i386
+Version: 3.80+3.81.b4-1
+Depends: libc6 (>= 2.3.4-1)
+Filename: pool/main/m/make/make_3.80+3.81.b4-1_i386.deb
+Size: 286334
+MD5sum: 984a347383e53e343b4566aa4641ca24
+Description: The GNU version of the "make" utility.
+ GNU Make is a program that determines which pieces of a large
+ program need to be recompiled and issues the commands to recompile
+ them, when necessary. More information about GNU Make can be
+ found in the `make' Info page. The upstream sources for this package
+ are available at the location ftp://ftp.gnu.org/gnu/make/
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: ndiswrapper-utils
+Priority: optional
+Section: misc
+Installed-Size: 136
+Maintainer: Andres Salomon <dilinger@debian.org>
+Architecture: i386
+Source: ndiswrapper
+Version: 1.8-0ubuntu2
+Depends: libc6 (>= 2.3.4-1), perl
+Suggests: ndiswrapper-source
+Filename: pool/main/n/ndiswrapper/ndiswrapper-utils_1.8-0ubuntu2_i386.deb
+Size: 27650
+MD5sum: 15bf250f0a1114686655232175339cc2
+Description: Userspace utilities for ndiswrapper
+ Some wireless LAN vendors refuse to release hardware specifications or
+ drivers for their products for operating systems other than Microsoft
+ Windows. NdisWrapper makes it possible to use such hardware with Linux by
+ means of a loadable kernel module that "wraps around" NDIS (Windows network
+ driver API) drivers.
+ .
+ This package contains the userspace tools. The default Ubuntu kernel
+ already provides the required modules. If you use a custom kernel,
+ you might also need the kernel module package.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: pptp-linux
+Priority: optional
+Section: net
+Installed-Size: 160
+Maintainer: Ola Lundqvist <opal@debian.org>
+Architecture: i386
+Version: 1.7.0-1ubuntu1
+Depends: libc6 (>= 2.3.4-1), ppp (>= 2.4.2)
+Suggests: kernel-patch-mppe
+Filename: pool/main/p/pptp-linux/pptp-linux_1.7.0-1ubuntu1_i386.deb
+Size: 40804
+MD5sum: 063e72260c39f0cb85ca8743e9e7a72e
+Description: Point-to-Point Tunneling Protocol (PPTP) Client
+ Client for the proprietary Microsoft Point-to-Point Tunneling
+ Protocol, PPTP.  Allows connection to a PPTP based VPN as used
+ by employers and some cable and ADSL service providers.
+ MPPE (Microsoft Point-to-Point Encryption) is supported with
+ the stock kernel.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+
+Package: setserial
+Priority: extra
+Section: base
+Installed-Size: 192
+Maintainer: Jonas Genannt <jonas.genannt@capi2name.de>
+Architecture: i386
+Version: 2.17-43
+Depends: libc6 (>= 2.3.4-1), debconf (>= 0.5) | debconf-2.0
+Filename: pool/main/s/setserial/setserial_2.17-43_i386.deb
+Size: 57832
+MD5sum: e9c14f4a5a1a7f930d676d335b326fb0
+Description: controls configuration of serial ports
+ Set and/or report the configuration information associated with
+ a serial port. This information includes what I/O port and which IRQ
+ a particular serial port is using.
+ .
+ This version has a completely new approach to configuration, so if you
+ have a setup other than the standard ttyS0 and 1, you will have to get
+ your hands dirty.
+ .
+ By default, only COM1-4 are configured by the kernel, using IRQ 3 and 4.
+ If you have other serial ports (such as an AST Fourport card), or
+ if you have mapped the IRQs differently (perhaps COM3 and 4 to other
+ IRQs to allow concurrent access with COM1 and 2) then you must have this
+ package.
+Bugs: mailto:ubuntu-users@lists.ubuntu.com
+Origin: Ubuntu
+

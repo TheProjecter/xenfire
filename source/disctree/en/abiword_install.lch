@@ -1,0 +1,2 @@
+[Launch] 
+ExecuteFile=${cwd}\..\programs\abiword\AbiwordSetup.exe

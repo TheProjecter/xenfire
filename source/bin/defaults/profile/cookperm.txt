@@ -1,0 +1,8 @@
+# HTTP Permission File
+# http://www.netscape.com/newsref/std/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+%0 popup
+%1 cookie
+%2 image
+
